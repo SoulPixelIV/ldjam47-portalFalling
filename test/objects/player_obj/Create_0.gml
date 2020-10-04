@@ -3,5 +3,6 @@ verspeed = 0;
 
 blocks = 0;
 hp = 10;
+coins = 0;
 
 alarm[0] = 800;
