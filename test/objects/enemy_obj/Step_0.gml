@@ -9,15 +9,15 @@ if (place_meeting(x, y, teleporterRed_obj))
 	hp--;
 }
 
-if (place_meeting(x, y, blockPlaced_obj))
+if (place_meeting(x, y, blockParent_obj))
 {
-	for (i = 0; i < instance_number(blockPlaced_obj); i += 1)
+	for (i = 0; i < instance_number(blockParent_obj); i += 1)
 	{
-		if (instance_find(blockPlaced_obj, i).x < x + 64 && instance_find(blockPlaced_obj, i).x > x - 64)
+		if (instance_find(blockParent_obj, i).x < x + 64 && instance_find(blockParent_obj, i).x > x - 64)
 		{
-			if (instance_find(blockPlaced_obj, i).y < y + 64 && instance_find(blockPlaced_obj, i).y > y - 64)
+			if (instance_find(blockParent_obj, i).y < y + 64 && instance_find(blockParent_obj, i).y > y - 64)
 			{
-				instance_destroy(instance_find(blockPlaced_obj, i));
+				instance_destroy(instance_find(blockParent_obj, i));
 			}
 		}
 	}

@@ -15,7 +15,7 @@ if (chance == 4)
 }
 
 //Spawn Shop
-if (random_range(0, 1000) > 999)
+if (random_range(0, 15) > 14)
 {
 	positionX = teleporterBlue_obj.x + random_range(-300, 300);
 	instance_create_layer(positionX, teleporterBlue_obj.y, "Instances", blockShop_obj);

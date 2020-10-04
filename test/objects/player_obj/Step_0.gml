@@ -88,3 +88,11 @@ if (blocks > 0 && mouse_check_button_pressed(mb_left))
 		}
 	}
 }
+
+//Death
+if (hp <= 0)
+{
+	room_goto(GameOver_room)
+}
+
+score += 1
