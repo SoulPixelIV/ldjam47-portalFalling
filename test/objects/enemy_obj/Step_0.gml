@@ -21,6 +21,10 @@ if (place_meeting(x, y, blockPlaced_obj))
 			}
 		}
 	}
+	if (distance_to_object(player_obj) < 64)
+	{
+		player_obj.hp--;
+	}
 	instance_destroy();
 }
 

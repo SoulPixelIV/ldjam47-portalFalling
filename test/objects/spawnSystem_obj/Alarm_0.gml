@@ -14,5 +14,17 @@ if (chance == 4)
 	instance_create_layer(teleporterBlue_obj.x + random_range(-300, 300),teleporterBlue_obj.y, "Instances", coin_obj);
 }
 
+//Spawn Shop
+if (random_range(0, 1000) > 999)
+{
+	positionX = teleporterBlue_obj.x + random_range(-300, 300);
+	instance_create_layer(positionX, teleporterBlue_obj.y, "Instances", blockShop_obj);
+	instance_create_layer(positionX + 32, teleporterBlue_obj.y, "Instances", blockShop_obj);
+	instance_create_layer(positionX - 32, teleporterBlue_obj.y, "Instances", blockShop_obj);
+	instance_create_layer(positionX + 64, teleporterBlue_obj.y, "Instances", blockShop_obj);
+	instance_create_layer(positionX - 64, teleporterBlue_obj.y, "Instances", blockShop_obj);
+	instance_create_layer(positionX - 64, teleporterBlue_obj.y - 32, "Instances", shopkeeper_obj);
+}
+
 alarm[0] = 250;
 
