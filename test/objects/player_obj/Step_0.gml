@@ -25,9 +25,9 @@ if (keyboard_check_pressed(vk_f1))
 }
 
 //Jump
-if (keyboard_check_pressed(vk_space))
+if (keyboard_check_pressed(vk_space) && grounded)
 {
-	y -= 64;
+	verspeed -= 64;
 }
 
 //Collision
@@ -54,7 +54,12 @@ if (!place_free(x, y + verspeed))
 			y += sign(verspeed) / 100;
 		}
 		verspeed = 0;
+		grounded = true;
 	}
+}
+else
+{
+	grounded = false;
 }
 
 //Teleport
