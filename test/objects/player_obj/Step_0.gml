@@ -74,6 +74,12 @@ if (place_meeting(x, y, block_obj))
 //Place Block
 if (blocks > 0 && mouse_check_button_pressed(mb_left))
 {
-	currentBlock = instance_create_layer(mouse_x, mouse_y, "Instances", blockPlaced_obj);
-	blocks--;
+	if (mouse_x < x + 96 && mouse_x > x - 96)
+	{
+		if (mouse_y < y + 96 && mouse_y > y - 96)
+		{
+			currentBlock = instance_create_layer(mouse_x, mouse_y, "Instances", blockPlaced_obj);
+			blocks--;
+		}
+	}
 }

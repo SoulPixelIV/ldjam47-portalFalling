@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"buildingTile_spr","path":"sprites/buildingTile_spr/buildingTile_spr.yy",},"order":5,},
     {"id":{"name":"spawnSystem_obj","path":"objects/spawnSystem_obj/spawnSystem_obj.yy",},"order":6,},
     {"id":{"name":"blockPlaced_obj","path":"objects/blockPlaced_obj/blockPlaced_obj.yy",},"order":4,},
     {"id":{"name":"enemy_obj","path":"objects/enemy_obj/enemy_obj.yy",},"order":5,},
