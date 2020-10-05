@@ -85,6 +85,7 @@ if (blocks > 0 && mouse_check_button_pressed(mb_left))
 		{
 			currentBlock = instance_create_layer(mouse_x, mouse_y, "Instances", blockPlaced_obj);
 			blocks--;
+			score += 5
 		}
 	}
 }
@@ -94,5 +95,3 @@ if (hp <= 0)
 {
 	room_goto(GameOver_room)
 }
-
-score += 1

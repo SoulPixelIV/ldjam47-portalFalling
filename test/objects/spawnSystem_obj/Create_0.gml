@@ -1,2 +1,2 @@
 randomize();
-alarm[0] = 250;
+alarm[0] = 50;
